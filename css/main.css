@@ -1,0 +1,57 @@
+@import url("second.css");
+p {
+    color: #FF0000;
+}
+
+.myClass {
+    background-color: magenta;
+}
+
+p.myClass {
+    background-color: gray;
+}
+
+#myId {
+    background-color: yellow;
+}
+
+p span {
+    color: blue;
+}
+
+span + i {
+    background-color: chartreuse;
+}
+
+p > strong {
+    background-color: darkcyan;
+}
+
+a[target="_blank"] {
+    color: black;
+}
+
+/** {*/
+    /*font-family: Tahoma;*/
+/*}*/
+
+a.linkStyle:link {
+    color: #036; /* Цвет непосещенных ссылок */
+}
+a.linkStyle:visited {
+    color: #606; /* Цвет посещенных ссылок */
+}
+a.linkStyle:hover {
+    color: #f00; /* Цвет ссылок при наведении на них курсора мыши */
+}
+a.linkStyle:active {
+    color: #ff0; /* Цвет активных ссылок */
+}
+
+.element:before {
+    content: " до элемента - ";
+}
+
+.element:after {
+    content: " - после элемента";
+}

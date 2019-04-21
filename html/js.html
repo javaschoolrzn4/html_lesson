@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <!--<script>-->
+        <!--alert( 'Привет, Мир!' );-->
+    <!--</script>-->
+    <!--<script src="../js/main.js"></script>-->
+    <!--<script src="http://127.0.0.1:8080/resources/js/second.js"></script>-->
+    <!--<script src="../js/big.js" defer></script>-->
+    <!--<script src="../js/small.js" defer></script>-->
+</head>
+<body>
+    Это текст на странице, но мы не увидим его пока не выполнится весь javascript!
+
+<script>
+    // обратим внимание на регистр переменных
+   // var i = "One";
+   // var I = "Two";
+   // console.log("i = " + i + ", I = " + I);
+   //
+   //  // на их наименование
+   // var переменная1 = "One";
+   // var переменная2 = "Two";
+   // console.log("переменная1 = " + переменная1 + ", переменная2 = " + переменная2)
+   //
+   // console.log("" + typeof undefined);
+   // console.log("" + typeof true);
+   // console.log("" + typeof 0);
+   // console.log("" + typeof "foo");
+   // console.log("" + typeof {});
+   // console.log("" + typeof null);
+   // console.log("" + typeof function(){});
+   //
+
+   // var age = prompt("Сколько Вам лет?", "18");
+   // alert("Вам " + age + " лет");
+   // var yesNo = confirm("Вы согласны разрабатывать на js?");
+   // alert( yesNo );
+
+//    функции
+//    function test(a, b, c) {
+//        console.log("a = " + a + ", b = " + b + ", c = " + c);
+//    }
+//    test(1, 2, 3);
+//    test(4, 5);
+//    test(6)
+//
+//    f(1, 2, 3);
+//    f(4, 5);
+//    f(6)
+// //
+//    var f = function(a, b, c) {
+//        console.log("a = " + a + ", b = " + b + ", c = " + c);
+//    };
+//    Объекты
+//    var myObj = {};
+//    var myObj2 = new Object();
+//    var myObj3 = {
+//        name: "MyName",
+//        age: 25,
+//        "русское поле": "someValue"
+//    };
+//    console.log("myObj3 = { name = " + myObj3.name + ", age = " + myObj3.age + ", русское поле = " + myObj3['русское поле']);
+
+   // function test() {
+   //     console.log("a = " + arguments[0] + ", b = " + arguments[1] + ", c = " + arguments[2]);
+   // }
+   // test(1, 2, 3);
+   // test(4, 5);
+   // test(6)
+
+//    Замыкания
+   function makeCounter() {
+       var currentCount = 1;
+
+       return {
+           getNext: function() {
+               return currentCount++;
+           },
+
+           set: function(value) {
+               currentCount = value;
+           },
+
+           reset: function() {
+               currentCount = 1;
+           }
+       };
+   }
+   
+   const makeCounter2 = () => {
+	let currentCount = 1
+	return {
+		getNext: () => currentCount++,
+		set: value => currentCount = value,
+		reset: () => currentCount = 1
+   }}
+
+   var counter = makeCounter2();
+
+   console.log( counter.getNext() );
+   console.log( counter.getNext() );
+   counter.set(5);
+   console.log( counter.getNext() );
+   counter.reset();
+   console.log( counter.getNext() );
+
+
+</script>
+</body>
+</html>

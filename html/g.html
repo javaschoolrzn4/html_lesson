@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Самый важный тэг</title>
+</head>
+<body>
+<a name="top"></a>
+<a href="index.html">главная</a>
+
+<h1>Пример тэга input</h1>
+
+<form action="/j_security" method="post">
+    <input type="text" name="j_username" placeholder="Однострочный input"/><br/>
+    <input type="password" name="j_password" placeholder="Поле пароля" value="123456789"/><br/>
+    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+
+    <textarea>Многострочный текст</textarea> <br/>
+
+    <input type="button" name="b1" value="Кнопка 1"><br/>
+    <input type="button" name="b2" value="Кнопка 2"><br/>
+    <input type="button" name="b3" value="Кнопка 3"><br/>
+
+    Переключатель:<br/>
+    <input type="radio" name="oneName" value="one"> Значение 1<br/>
+    <input type="radio" name="oneName" value="two" checked>Значение 2<br/>
+
+    Флажок:<br/>
+    <input type="checkbox" name="a" value="123">123<br/>
+    <input type="checkbox" name="b" value="234" checked>234<br/>
+    <input type="checkbox" name="c" value="345">345<br/>
+
+    Выпадающий список:<br/>
+    <select>
+        <option>Пункт 1</option>
+        <option selected>Пункт 2</option>
+        <option>Пункт 3</option>
+    </select>
+    Выпадающий список с множественным выбором:<br/>
+    <select multiple>
+        <option>Пункт 1</option>
+        <option selected>Пункт 2</option>
+        <option>Пункт 3</option>
+    </select>
+    Выпадающий список с группировкой:<br/>
+    <select name="select2">
+        <optgroup label="Nokia">
+            <option value="1100">1100</option>
+            <option value="3310">3310</option>
+            <option value="925">925</option>
+        </optgroup>
+        <optgroup label="iPhone">
+            <option value="i3">3</option>
+            <option value="i4">4</option>
+            <option value="i5">5</option>
+        </optgroup>
+    </select>
+    Картинка:<br/>
+    <input type="image" src="../img/1.jpg" alt="текст" width="50px" height="50px">
+    <br/>
+    <input type="file" accept="text/csv" size="30px" multiple name="file"><br/>
+    Адрес электронной почты:<br/>
+    <input type="email" value="test@test.test"><br/>
+    Веб-адрес:<br/>
+    <input type="url" required><br/>
+    Цвет:<br/>
+    <input type="color" onchange="alert(this.value)"><br/>
+    Ввод только цифр:<br/>
+    <input type="number"><br/>
+    Значение из диапазона:<br/>
+    <input type="range" min="0" max="100" step="1" value="50">
+    Дата:<br/>
+    <input type="date"><br/>
+    Время:<br/>
+    <input type="time"><br/>
+    Дата и время:<br/>
+    <input type="datetime-local"><br/>
+    Телефон в формате 8(XXX)-XXX-XX-XX:<br/>
+    <input type="tel" name="tel" pattern="8([0-9]{3})-[0-9]{3}-[0-9]{2}-[0-9]{2}"><br/>
+    Поиск:<br/>
+    <input type="search"><br/>
+    Группировка элементов:
+    <fieldset>
+        <legend>Вход на сайт</legend>
+        <p>Логин: <input name="login"></p>
+        <p>Пароль: <input type="password" name="pass"></p>
+        <p><input type="submit" value="Вход"></p>
+    </fieldset>
+    Выключенный элемент:<br/>
+    <input type="text" value="Значение" disabled><br/>
+    Readonly элемент:<br/>
+    <input type="text" value="Значение" readonly><br/>
+    <input type="submit" value="Вход" title="Отправка данных формы"/>
+</form>
+
+<a href="#top">Пример якоря</a>
+</body>
+</html>

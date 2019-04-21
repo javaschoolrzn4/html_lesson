@@ -1,0 +1,12 @@
+/* обратим внимание на порядок */
+@media (max-width: 600px){
+    p {
+        color: yellowgreen;
+    }
+}
+@media (max-width: 400px){
+    p {
+        color: aqua;
+    }
+}
+/* Обратим внимание на комментарий, не такой как в HTML */
